@@ -12,7 +12,7 @@ export default function AddHoldingForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('holdings')
       .insert([
         { 
